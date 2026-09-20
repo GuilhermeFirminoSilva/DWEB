@@ -6,9 +6,9 @@ Repositório dedicado às atividades e projetos práticos da disciplina de **Des
 
 As entregas estão organizadas em pastas sequenciais, acompanhando a progressão do semestre:
 
-* **Atividade1/**: *(Insira uma breve descrição do objetivo, ex: Estruturação básica com HTML5)*
-* **Atividade2/**: *(Insira uma breve descrição do objetivo, ex: Estilização de páginas com CSS3)*
-* **Atividade3/**: *(Insira uma breve descrição do objetivo, ex: Lógica e interatividade com JavaScript)*
+* **Atividade1/**: *Primeiro contato com o GitHub e primeiro Upload para teste*
+* **Atividade2/**: *Artigo gerado através de Inteligência Artificial sobre o tema: DevOps*
+* **Atividade3/**: *Criação de um site se utilizando do artigo anterior como conteúdo*
 
 ## 💻 Tecnologias Utilizadas
 
@@ -16,7 +16,6 @@ As principais linguagens e ferramentas aplicadas no desenvolvimento destas ativi
 * HTML5
 * CSS3
 * JavaScript
-* *(Adicione outras ferramentas ou frameworks conforme o avanço das aulas)*
 
 ## 👨‍💻 Autor
 
