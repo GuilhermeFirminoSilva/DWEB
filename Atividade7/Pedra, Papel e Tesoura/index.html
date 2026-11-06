@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pedra, Papel e Tesoura</title>
+    <style>
+      body.tema-escuro {
+        background-color: #222222;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="alternarTema()">Mudar para Tema Escuro/Claro</button>
+    <hr />
+
+    <h1>Pedra, Papel e Tesoura</h1>
+    <p>Escolha sua jogada:</p>
+
+    <button onclick="jogar('pedra')">Pedra</button>
+    <button onclick="jogar('papel')">Papel</button>
+    <button onclick="jogar('tesoura')">Tesoura</button>
+
+    <h2>Resultado:</h2>
+    <p id="resultado">Faça sua jogada!</p>
+
+    <!-- JavaScript junto no mesmo arquivo -->
+    <script>
+      function alternarTema() {
+        document.body.classList.toggle("tema-escuro");
+      }
+
+      function jogar(jogadaUsuario) {
+        const opcoes = ["pedra", "papel", "tesoura"];
+        const jogadaMaquina = opcoes[Math.floor(Math.random() * 3)];
+
+        let resultadoTexto = "";
+
+        if (jogadaUsuario === jogadaMaquina) {
+          resultadoTexto = `Empate! Ambos escolheram ${jogadaUsuario}.`;
+        } else if (
+          (jogadaUsuario === "pedra" && jogadaMaquina === "tesoura") ||
+          (jogadaUsuario === "papel" && jogadaMaquina === "pedra") ||
+          (jogadaUsuario === "tesoura" && jogadaMaquina === "papel")
+        ) {
+          resultadoTexto = `Você venceu! ${jogadaUsuario} ganha de ${jogadaMaquina}.`;
+        } else {
+          resultadoTexto = `Você perdeu! A máquina escolheu ${jogadaMaquina}.`;
+        }
+
+        document.getElementById("resultado").innerText = resultadoTexto;
+      }
+    </script>
+  </body>
+</html>
