@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pesquisa Simplificada</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>Pesquisa do Filme</h2>
+
+    Idade: <input type="number" id="idade" /><br /><br />
+
+    Sexo:
+    <select id="sexo">
+      <option value="Feminino">Feminino</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Outros">Outros</option></select
+    ><br /><br />
+
+    Opinião:
+    <select id="opiniao">
+      <option value="4">Ótimo (4)</option>
+      <option value="3">Bom (3)</option>
+      <option value="2">Regular (2)</option>
+      <option value="1">Péssimo (1)</option></select
+    ><br /><br />
+
+    <button onclick="salvarDados()">Salvar</button>
+    <p>Respostas cadastradas: <span id="contador">0</span>/45</p>
+
+    <div id="resultados"></div>
+  </body>
+</html>
